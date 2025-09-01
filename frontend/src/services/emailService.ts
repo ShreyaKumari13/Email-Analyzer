@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Email, EmailConfig, ConnectionStatus } from '@/types/email';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://email-analyzer-6g1h.onrender.com';
 
 const api = axios.create({
   baseURL: `${API_BASE_URL}/api`,

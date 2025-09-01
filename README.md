@@ -69,7 +69,7 @@ IMAP_PASSWORD=your-app-password
 IMAP_TLS=true
 
 # Frontend URL for CORS
-FRONTEND_URL=http://localhost:3000
+FRONTEND_URL=https://email-analyzer-ivory.vercel.app
 ```
 
 ### 3. Frontend Setup
@@ -79,7 +79,7 @@ cd ../frontend
 npm install
 
 # Create environment file
-echo "NEXT_PUBLIC_API_URL=http://localhost:3001" > .env.local
+echo "NEXT_PUBLIC_API_URL=https://email-analyzer-6g1h.onrender.com" > .env.local
 ```
 
 ### 4. Database Setup
@@ -102,7 +102,7 @@ cd frontend
 npm run dev
 ```
 
-Access the application at `http://localhost:3000`
+Access the application at `http://localhost:3000` or the deployed version at https://email-analyzer-ivory.vercel.app
 
 ### Production Mode
 
@@ -122,7 +122,7 @@ npm start
 
 ## 📧 How to Test
 
-1. **Access the Application**: Navigate to `http://localhost:3000`
+1. **Access the Application**: Navigate to `http://localhost:3000` or the deployed version at https://email-analyzer-ivory.vercel.app
 
 2. **Get Test Email Address**: The system displays a generated email address and subject line
 
@@ -208,7 +208,7 @@ frontend/src/
    IMAP_HOST=your-imap-host
    IMAP_USER=your-email
    IMAP_PASSWORD=your-password
-   NEXT_PUBLIC_API_URL=https://your-api-domain.vercel.app
+   NEXT_PUBLIC_API_URL=https://email-analyzer-6g1h.onrender.com
    ```
 
 3. **Deploy**: Vercel will automatically build and deploy both frontend and backend
@@ -273,41 +273,3 @@ npm run test
 - **Database Queries**: Indexed MongoDB collections
 - **Frontend**: Lazy loading and component optimization
 - **Real-time Updates**: Efficient polling strategy
-
-## 🎯 Future Enhancements
-
-- WebSocket integration for real-time updates
-- Email content analysis and spam detection
-- Advanced ESP identification algorithms
-- Email analytics and reporting dashboard
-- Multi-language support
-- Bulk email processing capabilities
-
-## 📝 Assignment Compliance
-
-This project fulfills all requirements of the Lucid Growth assignment:
-
-✅ **Functionality**: Complete IMAP-based email processing  
-✅ **Code Quality**: Clean, modular, and well-documented  
-✅ **UI/UX**: Responsive, professional, and intuitive interface  
-✅ **Deployment**: Production-ready with live demo capability  
-✅ **Documentation**: Comprehensive setup and usage instructions  
-
-## 📞 Support
-
-For issues or questions regarding this implementation:
-
-1. Check the troubleshooting section above
-2. Review console logs for error messages
-3. Verify environment configuration
-4. Test with different email providers
-
-## 🏆 Demo Video
-
-A demonstration video showcasing the application's features and functionality is available as part of the submission.
-
----
-
-**Built with ❤️ for the Lucid Growth Assignment**
-
-*Submission Date: September 2024*
