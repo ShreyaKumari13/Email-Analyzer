@@ -7,7 +7,12 @@ async function bootstrap() {
   
   // Enable CORS
   app.enableCors({
-    origin: process.env.FRONTEND_URL || 'https://email-analyzer-ivory.vercel.app',
+    origin: [
+      process.env.FRONTEND_URL || 'https://email-analyzer-ivory.vercel.app',
+      'https://email-analyzer-ivory.vercel.app',
+      'https://email-analyzer-ivory.vercel.app/',
+      'http://localhost:3000'
+    ],
     credentials: true,
   });
   
